@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    body {
+      background: #3339b5;
+      color: white;
+      font-family: 'Courier New';
+    }
+
+    .button {
+      background-color: #0c116e;
+      border: none;
+      color: white;
+      padding: 15px 30px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 1px;
+      cursor: pointer;
+      font-family: 'Arial';
+      font-size: 20px;
+      border-radius: 12px;
+    }
+
+    .qb {
+      background-color: #0c116e;
+      border: #0c116e;
+      color: white;
+      padding: 15px 150px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 0px 1px;
+      cursor: pointer;
+      font-family: 'Courier New';
+      font-size: 20px;
+    }
+
+    .q {
+      background-color: #3339b5;
+      border: #0c116e;
+      color: white;
+      padding: 15px 30px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 1px;
+      cursor: pointer;
+      font-family: 'Courier New';
+      font-size: 20px;
+    }
+
+    .q > span {
+      display: block;
+      background-color: #3339b5;
+    }
+
+    input[type=submit] {
+      background-color: #0c116e;
+      border: none;
+      color: white;
+      padding: 15px 30px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 1px;
+      cursor: pointer;
+      font-family: 'Arial';
+      font-size: 20px;
+      border-radius: 12px;
+    }
+
+    .result {
+      color: white;
+      font-size: 24px;
+      margin-top: 20px;
+    }
+
+    #linkButton {
+      background-color: #0c116e;
+      border: none;
+      color: white;
+      padding: 15px 30px;
+      text-align: center;
+      text-decoration: none;
+      display: none;
+      font-size: 16px;
+      margin: 4px 1px;
+      cursor: pointer;
+      font-family: 'Arial';
+      font-size: 20px;
+      border-radius: 12px;
+    }
+  </style>
+</head>
+<body>
+
+  <span class="button">
+    <a href="C:\Users\shady\OneDrive\Desktop\AreYouAWormQuiz\AreYouAWorm_Quiz.html">←BACK</a>
+  </span>
+
+  <div class="q">
+    <form id="quizForm">
+    <span class="qb">1) Do you enjoy shimmying through tight spaces?</span><br>
+      <span><input type="radio" name="1" id="o1">often</span><br>
+      <span><input type="radio" name="1" id="s1">sometimes</span><br>
+      <span><input type="radio" name="1" id="r1">rarely</span><br>
+      <span><input type="radio" name="1">never</span><br>
+
+      <span class="qb">2) Do you ever feel like you need more physial freedom?</span><br>
+      <span><input type="radio" name="2" id="o2">often</span><br>
+      <span><input type="radio" name="2" id="s2">sometimes</span><br>
+      <span><input type="radio" name="2" id="r2">rarely</span><br>
+      <span><input type="radio" name="2">never</span><br>
+
+      <span class="qb">3) Do you feel more at home outside than anywhere else?</span><br>
+      <span><input type="radio" name="3" id="o3">often</span><br>
+      <span><input type="radio" name="3" id="s3">sometimes</span><br>
+      <span><input type="radio" name="3" id="r3">rarely</span><br>
+      <span><input type="radio" name="3">never</span><br>
+
+      <span class="qb">4) Do you feel as if you are in the wrong body?</span><br>
+      <span><input type="radio" name="4" id="o4">often</span><br>
+      <span><input type="radio" name="4" id="s4">sometimes</span><br>
+      <span><input type="radio" name="4" id="r4">rarely</span><br>
+      <span><input type="radio" name="4">never</span><br>
+
+      <span class="qb">5) Do you like getting messy?</span><br>
+      <span><input type="radio" name="5" id="o5">often</span><br>
+      <span><input type="radio" name="5" id="s5">sometimes</span><br>
+      <span><input type="radio" name="5" id="r5">rarely</span><br>
+      <span><input type="radio" name="5">never</span><br>
+
+      <span class="qb">6) Do you feel as if you can speak to/understand worms?</span><br>
+      <span><input type="radio" name="6" id="o6">often</span><br>
+      <span><input type="radio" name="6" id="s6">sometimes</span><br>
+      <span><input type="radio" name="6" id="r6">rarely</span><br>
+      <span><input type="radio" name="6">never</span><br>
+
+      <span class="qb">7) Have you ever dreamt of being a worm?</span><br>
+      <span><input type="radio" name="7" id="o7">often</span><br>
+      <span><input type="radio" name="7" id="s7">sometimes</span><br>
+      <span><input type="radio" name="7" id="r7">rarely</span><br>
+      <span><input type="radio" name="7">never</span><br>
+
+      <span class="qb">8) Do others seem to dislike you for no reason?</span><br>
+      <span><input type="radio" name="8" id="o8">often</span><br>
+      <span><input type="radio" name="8" id="s8">sometimes</span><br>
+      <span><input type="radio" name="8" id="r8">rarely</span><br>
+      <span><input type="radio" name="8">never</span><br>
+
+      <span class="qb">9) Do you only remember the last 2 weeks?</span><br>
+      <span><input type="radio" name="9" id="o9">often</span><br>
+      <span><input type="radio" name="9" id="s9">sometimes</span><br>
+      <span><input type="radio" name="9" id="r9">rarely</span><br>
+      <span><input type="radio" name="9">never</span><br>
+
+      <span class="qb">10) Do you want to be one with the worm gods?</span><br>
+      <span><input type="radio" name="10" id="o10">often</span><br>
+      <span><input type="radio" name="10" id="s10">sometimes</span><br>
+      <span><input type="radio" name="10" id="r10">rarely</span><br>
+      <span><input type="radio" name="10">never</span><br>
+    </form>
+  </div>
+
+  <div>
+    <input type="submit" name="submit" value="Submit" onclick="result()">
+  </div>
+
+  <div class="result" id="resultDisplay"></div>
+
+  <span id="linkButton" class="button">
+    <a href="file:///C:/Users/shady/OneDrive/Desktop/AreYouAWormQuiz/AreYouAWorm_Quiz.html#targetSection">I might be a worm, what now?</a>
+  </span>
+
+  <script type="text/javascript">
+    function result() {
+      const form = document.getElementById('quizForm');
+      let score = 0;
+
+      // Calculate the score
+      for (let i = 1; i <= 10; i++) {
+        const optionValue = form.querySelector(`input[name="${i}"]:checked`);
+        if (optionValue) {
+          const optionId = optionValue.id;
+          if (optionId.startsWith('o')) {
+            score += 1;
+          } else if (optionId.startsWith('s')) {
+            score += 0.5;
+          } else if (optionId.startsWith('r')) {
+            score += 0.25;
+          }
+        }
+      }
+
+      // Display the result
+      const resultDisplay = document.getElementById('resultDisplay');
+      resultDisplay.textContent = "You are " + (score * 10) + "% a worm.";
+
+      // Display or hide the link button based on the score
+      const linkButton = document.getElementById('linkButton');
+      if (score > 5) {
+        linkButton.style.display = 'inline-block';
+        linkButton.textContent = "I might be a worm, what now?";
+      } else {
+        linkButton.style.display = 'none';
+      }
+    }
+  </script>
+
+</body>
+</html>
